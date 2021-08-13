@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <!-- Elemen Form : input, textarea, select, button, label -->
+     <form action="">
+         <!-- 1. Input -->
+         <!-- text -->
+        <label for="username">Username :</label>
+        <input type="text" id="username">
+        <br><br>
+        <!-- password -->
+        <label for="password">Password :</label>
+        <input type="password" id="password">
+        <br><br>
+        <!-- radio button -->
+        <input type="radio" id="man" name="gender"><label for="man">Laki-laki</label>
+        <input type="radio" id="woman" name="gender"><label for="woman">Perempuan</label>
+        <br><br>
+        <!-- checkbox -->
+        <input type="checkbox" id="sing"><label for="sing">Menyanyi</label>
+        <input type="checkbox" id="ball"><label for="ball">Bola Kaki</label>
+        <input type="checkbox" id="swim"><label for="swim">Berenang</label>
+        <input type="checkbox" id="music"><label for="music">Musik</label>
+        <br><br>
+        <!-- submit --> 
+        <!-- tidak disarankan menggunakan input untuk tombol -->
+        <input type="submit" value="Kirim!">
+        <br><br>
+
+        <!-- 2. Textarea -->
+        <label for="address" name="adds">Alamat</label><br>
+        <textarea name="adds" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <!-- 3. Select -->
+        <label for="city">Nama-nama Kota</label><br>
+        <select name="" id="city">
+            <option value="">Medan</option>
+            <option value="">Jakarta</option>
+            <option value="">Bandung</option>
+            <option value="">Makassar</option>
+            <option value="">Ambon</option>
+        </select>
+        <br><br>
+
+        <!-- 2. Button -->
+        <!-- submit -->
+        <button type="submit">Kirim!</button>
+        <br>
+            <hr>
+        </br>
+
+        <!-- Membuat form ke dalam sebuat tabel -->
+        <div align="center">
+            <h1>TUGAS</h1>
+            <table border="0" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td align="right">
+                        <label for="username">Username :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="password">Password :</label>
+                    </td>
+                    <td>
+                        <input type="text" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <label for="man" name="gender">Laki-laki</label>
+                        <input type="radio" id="man">
+                        <label for="woman" name="gender">Perempuan</label>
+                        <input type="radio" id="woman">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <label for="sing">Menyanyi</label>
+                        <input type="checkbox" id="sing">
+                        <label for="swim">Berenang</label>
+                        <input type="checkbox" id="swim">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="status">Status :</label>
+                    </td>
+                    <td>
+                        <select name="" id="status">
+                            <option value="">Menikah</option>
+                            <option value="">Belum Menikah</option>
+                            <option value="">Janda</option>
+                            <option value="">Duda</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="address">Alamat :</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="address" cols="23" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <button type="submit">Simpan</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+     </form>
+</body>
+</html>
